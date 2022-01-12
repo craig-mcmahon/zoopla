@@ -59,8 +59,8 @@ class SendProperty extends RequestBase
 		'sap_rating' => array('type' => 'integer', ),
 		'total_bedrooms' => array('type' => 'integer', ),
 
-
-		'property_type' => array('type' => 'enum', 'class' => PropertyType::class, ),
+		// property_type can actually be any string (https://realtime-listings.webservices.zpg.co.uk/docs/latest/documentation.html#appendix_attributes_property_type)
+		//'property_type' => array('type' => 'enum', 'class' => PropertyType::class, ),
 		'listed_building_grade' => array('type' => 'enum', 'class' => ListedBuildingGrade::class, ),
 		'tenure' => array('type' => 'enum', 'class' => Tenure::class, ),
 		'central_heating' => array('type' => 'enum', 'class' => CentralHeating::class, ),
